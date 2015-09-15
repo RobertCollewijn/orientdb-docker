@@ -146,7 +146,7 @@
     </network>
     <storages>
       <storage name="test" userName="admin" userPassword="admin" path='memory:test' loaded-at-startup="true" db-type="graph" />
-      <storage name="development" userName="admin" userPassword="admin" path="plocal:/opt/orientdb/databases/development" loaded-at-startup="true" db-type="graph" />
+      <storage name="development" userName="admin" userPassword="admin" path="plocal:/opt/orientdb/databases/development" db-type="graph" />
     </storages>
     <users>
       <user resources="*" password="root" name="root"/>
@@ -157,7 +157,7 @@
         <entry name="db.pool.max" value="50"/>
 
         <!-- PROFILER: configures the profiler as <seconds-for-snapshot>,<archive-snapshot-size>,<summary-size> -->
-        <entry name="profiler.enabled" value="true"/>
+        <!-- <entry name="profiler.enabled" value="true"/> -->
         <!-- <entry name="profiler.config" value="30,10,10" /> -->
 
         <!-- LOG: enable/Disable logging. Levels are: finer, fine, finest, info,
